@@ -27,12 +27,12 @@ export default function User() {
     
     return (
         <div className='container mt-3'>
-            <h4>{user?.user_details.id}</h4>
-            <h4>{user?.user_details.username}</h4>
-            <h4>{user?.user_details.email}</h4>
-            <h4>{user?.user_details.first_name}</h4>
-            <h4>{user?.user_details.last_name}</h4>
-            <h4>{user?.user_details.is_staff}</h4>
+            <h4>{user?.user_details?.id}</h4>
+            <h4>{user?.user_details?.username}</h4>
+            <h4>{user?.user_details?.email}</h4>
+            <h4>{user?.user_details?.first_name}</h4>
+            <h4>{user?.user_details?.last_name}</h4>
+            <h4>{user?.user_details?.is_staff}</h4>
             <button disabled={loading} type='button' onClick={onLogout}>Logout</button>
         </div>
     )
